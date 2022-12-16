@@ -1,9 +1,141 @@
 @charset "UTF-8";
 
-:root {}
+@font-face {
+    font-family: "LiberationSerif";
+    font-weight: normal;
+    src: url(../fontes/LiberationSerif-Regular.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "ModernSans";
+    font-weight: light;
+    src: url(../fontes/ModernSans-Light.otf) format("opentype");
+}
+
+@font-face {
+    font-family: "Tangerine";
+    font-weight: bold;
+    src: url(../fontes/LT-Marathon-Bold-Italic.otf) format("opentype");
+}
+
+:root {
+    --fonte-serifada: "LiberationSerif";
+    --fonte-sem-serifa: "ModernSans";
+    --fonte-versos: "Tangerine";
+}
 
 * {
     margin: 0;
     padding: 0;
 }
 
+body {
+    width: auto;
+}
+
+header {
+    position: relative;
+    background-color: black;
+    color: white;
+    height: 21vmin;
+    padding: 2vw;
+}
+
+header > div.center {
+    position: absolute;
+    display: inline-block;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+header > div.center > h1 {
+    font-size: 7vw;
+    white-space: nowrap;
+}
+
+header > div.center > p {
+    margin-top: 1vw;
+    
+}
+
+header > div.center > h1 > span#cordel {
+    font-family: var(--fonte-serifada);
+}
+
+header > div.center > h1 > span#moderno {
+    font-family: var(--fonte-sem-serifa);
+}
+
+header > div.center > p, footer > p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif
+}
+
+a {
+    font-weight: bolder;
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+main div.estrofes {
+    font: 4.5vw var(--fonte-versos);
+    padding: 100px 0 100px 40px;
+    line-height: 7.2vw;
+}
+
+main > div.estrofes#estrofe-2 > p#estrofe-2, p#estrofe-5 {
+    color: white;
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.514);
+    display: inline-block;
+    padding: 20px;
+    margin-left: -20px;
+}
+
+main > div#estrofe-3.estrofes#estrofe-3 {
+    padding-bottom: 25px;
+
+}
+
+main > div#estrofe-4.estrofes#estrofe-4 {
+    padding-top: 25px;
+
+}
+
+main > div#estrofe-6.estrofes#estrofe-6 {
+    padding-bottom: 25px;
+
+}
+
+main > div#estrofe-7.estrofes#estrofe-7 {
+    padding-top: 25px;
+
+}
+
+
+main > div.estrofes#estrofe-2 {
+    background: fixed url(../imagens/blooming-g67ce80f79_1920.jpg) center center no-repeat;
+    background-size: auto;
+    box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.493);
+
+}
+
+main > div.estrofes#estrofe-5 {
+    background: fixed url(../imagens/feather-g8fdcf506b_1920.jpg) center center no-repeat;
+    background-size: auto;
+    box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.493);
+
+}
+
+
+footer {
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding: 10px;
+}
