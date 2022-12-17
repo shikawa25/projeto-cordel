@@ -119,7 +119,7 @@ main > div#estrofe-7.estrofes#estrofe-7 {
 
 
 main > div.estrofes#estrofe-2 {
-    background: fixed url(../imagens/blooming-g67ce80f79_1920.jpg) center center no-repeat;
+    background: fixed url(../imagens/blooming-g67ce80f79_1920.jpg) left center no-repeat;
     background-size: auto;
     box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.493);
 
