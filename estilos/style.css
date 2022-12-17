@@ -19,9 +19,9 @@
 }
 
 :root {
-    --fonte-serifada: "LiberationSerif";
-    --fonte-sem-serifa: "ModernSans";
-    --fonte-versos: "Tangerine";
+    --fonte-serifada: "LiberationSerif", serif;
+    --fonte-sem-serifa: "ModernSans", sans-serif;
+    --fonte-versos: "Tangerine", cursive;
 }
 
 * {
